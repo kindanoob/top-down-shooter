@@ -18,7 +18,7 @@ Instructions:
     While in game, use left mouse click to shoot.
 7) Keyboard controls. Use WASD keys to move your character up/left/down/right. Press M key to show/hide minimap.
     Press K key to end the game.
-8) Currently there is only one sandbox level without any goal.
+8) Currently there is only one sandbox level with a procedurally generated map and without any goal.
 
 
 The project is early in the development stage and there are a lot of things to be implemented.
