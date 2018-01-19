@@ -1,11 +1,11 @@
-#ifndef RNG_H
-#define RNG_H
+#ifndef RNG_H_
+#define RNG_H_
 
 #include <random>
 #include <ctime>
 
 
-namespace Rng{
+namespace Rng {
     int int_in_range(int low, int high);
 }
-#endif // RNG_H
+#endif // RNG_H_

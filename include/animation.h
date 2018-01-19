@@ -1,16 +1,16 @@
-#ifndef ANIMATION_H
-#define ANIMATION_H
+#ifndef ANIMATION_H_
+#define ANIMATION_H_
 
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-class Animation{
+class Animation {
 public:
 	std::vector<sf::IntRect> frames;
 	std::vector<sf::IntRect> frames_flip;
 	double current_frame;
 	double speed;
-	bool loop;//loop показвает зациклена ли анимация. Например анимация взрыва должна проиграться один раз и остановиться, loop=false
+	bool loop;
 	bool flip;
 	bool is_playing;
 	sf::Sprite sprite;
@@ -19,5 +19,5 @@ public:
 };
 
 
-#endif // ANIMATION_H
+#endif // ANIMATION_H_
 

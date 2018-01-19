@@ -1,5 +1,5 @@
-#ifndef GAME_STATE_H
-#define GAME_STATE_H
+#ifndef GAME_STATE_H_
+#define GAME_STATE_H_
 
 
 #include <SFML/Graphics.hpp>
@@ -8,10 +8,9 @@
 class Application;
 
 
-class Game_state{
+class Game_state {
 public:
     Application *application;
-    //double game_time;
     Game_state(Application *app);
 
     virtual void input(Application *app) = 0;
@@ -25,4 +24,6 @@ public:
     //sf::Font *get_font();
     //sf::SoundBuffer *get_sound();
 };
-#endif // GAME_STATE_H
+
+
+#endif // GAME_STATE_H_

@@ -1,5 +1,5 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#ifndef CONFIG_H_
+#define CONFIG_H_
 
 #include <cmath>
 #include <string>
@@ -227,5 +227,5 @@ const std::vector<int> SURVIVE_VALUES = {4,5,6,7,8};//if alive cell has number o
 //---B123/S
 //---B13/S
 
-#endif // CONFIG_H
+#endif // CONFIG_H_
 

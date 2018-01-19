@@ -1,5 +1,5 @@
-#ifndef GAME_OVER_H
-#define GAME_OVER_H
+#ifndef GAME_OVER_H_
+#define GAME_OVER_H_
 
 #include <SFML/Graphics.hpp>
 
@@ -9,7 +9,7 @@ class Application;
 
 
 
-class Game_over_state: public Game_state{
+class Game_over_state: public Game_state {
 public:
     Game_over_state(Application *app);
     ~Game_over_state();
@@ -29,4 +29,5 @@ public:
     void draw(Application *app);
     void init_entities();
 };
-#endif // GAME_OVER_H
+
+#endif // GAME_OVER_H_

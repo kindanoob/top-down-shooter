@@ -1,5 +1,5 @@
-#ifndef MAP_H
-#define MAP_H
+#ifndef MAP_H_
+#define MAP_H_
 
 #include <vector>
 #include <string>
@@ -50,4 +50,4 @@ std::vector<std::string> game_map = {
     "CHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHC"
 };
 
-#endif // MAP_H
+#endif // MAP_H_

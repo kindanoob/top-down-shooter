@@ -1,5 +1,5 @@
-#ifndef RESOURCE_HOLDER_H
-#define RESOURCE_HOLDER_H
+#ifndef RESOURCE_HOLDER_H_
+#define RESOURCE_HOLDER_H_
 
 //#include "texture_manager.h"
 //#include "font_manager.h"
@@ -11,9 +11,8 @@ class Sound_manager;
 class Music_manager;
 
 
-class Resource_holder{
+class Resource_holder {
 public:
-    //static const Resource_holder& get();
     Resource_holder();
     Texture_manager *textures;
     Font_manager *fonts;
@@ -23,7 +22,7 @@ public:
     //const sf::Font& get_font(Font_name name) const;
     //const sf::SoundBuffer& get_sound_buffer(Sound_name name) const;
 private:
-
     //Sound_manager sounds;
 };
-#endif // RESOURCE_HOLDER_H
+
+#endif // RESOURCE_HOLDER_H_

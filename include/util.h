@@ -1,12 +1,12 @@
-#ifndef UTIL_H
-#define UTIL_H
+#ifndef UTIL_H_
+#define UTIL_H_
 
 #include <cmath>
 
 #include <SFML/Graphics.hpp>
 
 
-namespace Util{
+namespace Util {
     double dist_squared(double x1, double y1, double x2, double y2);
     double dist(double x1, double y1, double x2, double y2);
     double length(double x1, double y1);
@@ -38,6 +38,4 @@ namespace Util{
 
 
 
-//double dot_product()
-
-#endif // UTIL_H
+#endif // UTIL_H_

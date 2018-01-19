@@ -1,5 +1,5 @@
-#ifndef GAME_MAP_H
-#define GAME_MAP_H
+#ifndef GAME_MAP_H_
+#define GAME_MAP_H_
 
 #include <vector>
 #include <string>
@@ -56,7 +56,7 @@ class Application;
 class Room;
 class Node;
 
-class Game_map{
+class Game_map {
 public:
     std::vector<std::vector<char> > char_map_;
     int width_;
@@ -127,4 +127,4 @@ public:
     sf::Sprite brown_sprite_;
 };
 
-#endif // GAME_MAP_H
+#endif // GAME_MAP_H_

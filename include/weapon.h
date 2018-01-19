@@ -1,11 +1,17 @@
-#ifndef WEAPON_H
-#define WEAPON_H
+#ifndef WEAPON_H_
+#define WEAPON_H_
 
 
-enum class Weapon_type{none, pistol, shotgun, machine_gun, rail_gun, num_weapons};
+enum class Weapon_type {
+    none, 
+    pistol, 
+    shotgun, 
+    machine_gun, 
+    rail_gun, 
+    num_weapons
+};
 
-class Weapon
-{
+class Weapon {
     public:
         Weapon(Weapon_type type, double damage,
                        double shoot_delay, double spawn_probability);
@@ -24,4 +30,4 @@ class Weapon
         double spawn_probability_;
 };
 
-#endif // WEAPON_H
+#endif // WEAPON_H_

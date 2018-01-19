@@ -1,5 +1,5 @@
-#ifndef ROOM_H
-#define ROOM_H
+#ifndef ROOM_H_
+#define ROOM_H_
 
 
 #include <vector>
@@ -7,24 +7,19 @@
 
 class Game_map;
 
-class Node{
+class Node {
 public:
     Node(int x, int y): x_(x), y_(y){}
     int x_;
     int y_;
-    //bool is_on_boundary_;
-    //bool is_on_boundary(){
-        //return is_on_boundary_;
-    //}
 private:
 };
 
-class Room{
+class Room {
 public:
     std::vector<Node *> node_vector_;
     std::vector<Node *> boundary_nodes_;
     std::vector<Room *> connected_rooms_;
-    //Room *closest_room_ = nullptr;
     bool is_main_room_ = false;
     bool is_connected_to_main_room_ = false;
 public:
@@ -41,4 +36,4 @@ public:
 };
 
 
-#endif // ROOM_H
+#endif // ROOM_H_

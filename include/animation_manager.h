@@ -1,5 +1,5 @@
-#ifndef ANIMATION_MANAGER_H
-#define ANIMATION_MANAGER_H
+#ifndef ANIMATION_MANAGER_H_
+#define ANIMATION_MANAGER_H_
 
 #include "animation.h"
 #include<map>
@@ -9,16 +9,15 @@ class Entity;
 
 
 
-class AnimationManager
-{
+class AnimationManager {
 
 public:
     std::string current_animation;
 	std::map<std::string, Animation> animation_map;
 
-	AnimationManager(){};
+	AnimationManager() {};
 
-	~AnimationManager(){
+	~AnimationManager() {
         animation_map.clear();
 	}
 	AnimationManager& operator=(const AnimationManager &other);
@@ -38,5 +37,5 @@ public:
 };
 
 
-#endif // ANIMATION_MANAGER_H
+#endif // ANIMATION_MANAGER_H_
 

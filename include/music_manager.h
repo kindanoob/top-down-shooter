@@ -1,5 +1,5 @@
-#ifndef MUSIC_MANAGER_H
-#define MUSIC_MANAGER_H
+#ifndef MUSIC_MANAGER_H_
+#define MUSIC_MANAGER_H_
 
 
 #include <map>
@@ -10,12 +10,12 @@
 
 
 
-enum class Music_name{
+enum class Music_name {
     play_state_music
 };
 
 
-class Music_manager{
+class Music_manager {
 public:
     Music_manager();
     ~Music_manager();
@@ -31,11 +31,12 @@ public:
         //resource_map.insert(std::make_pair(name, res));
         //resource_map.insert(std::make_pair(name, music_resource));
     //}
-    sf::Music& play_state_music(){
+    sf::Music& play_state_music() {
         return play_state_music_;
     }
 private:
     sf::Music play_state_music_;
     //std::map<Music_name, sf::Music&> resource_map;
 };
-#endif // MUSIC_MANAGER_H
+
+#endif // MUSIC_MANAGER_H_

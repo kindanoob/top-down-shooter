@@ -1,5 +1,5 @@
-#ifndef MAIN_MENU_H
-#define MAIN_MENU_H
+#ifndef MAIN_MENU_H_
+#define MAIN_MENU_H_
 
 
 #include <SFML/Graphics.hpp>
@@ -10,7 +10,7 @@ class Application;
 class Button;
 
 
-class Main_menu_state: public Game_state{
+class Main_menu_state: public Game_state {
 public:
     Main_menu_state(Application *app);
     ~Main_menu_state();
@@ -28,19 +28,19 @@ public:
     void update(double dt, Application *app);
     void draw(Application *app);
     void init_entities();
-    Button *new_game_button(){
+    Button *new_game_button() {
         return new_game_button_;
     }
-    Button *options_button(){
+    Button *options_button() {
         return options_button_;
     }
-    Button *exit_button(){
+    Button *exit_button() {
         return exit_button_;
     }
 private:
-    Button *new_game_button_;
-    Button *options_button_;
-    Button *exit_button_;
+    Button *new_game_button_ = nullptr;
+    Button *options_button_ = nullptr;
+    Button *exit_button_ = nullptr;
 };
 
-#endif // MAIN_MENU_H
+#endif // MAIN_MENU_H_

@@ -1,21 +1,21 @@
-#ifndef RESOURCE_MANAGER_H
-#define RESOURCE_MANAGER_H
+#ifndef RESOURCE_MANAGER_H_
+#define RESOURCE_MANAGER_H_
 
 #include<map>
 #include <iostream>
 
 
 template<typename Enum, typename Resource>
-class Resource_manager{
+class Resource_manager {
 public:
     std::map<Enum, Resource> resource_map;
-    Resource& get_resource(Enum name){
+    Resource& get_resource(Enum name) {
         return resource_map[name];
     };
 protected:
-    void add_resource(Enum name, const std::string &filename){
+    void add_resource(Enum name, const std::string &filename) {
         Resource res;
-        if(!res.loadFromFile(filename)){
+        if(!res.loadFromFile(filename)) {
             std::cout << "Failed to load resource from file " << filename << std::endl;
             return;
         }
@@ -25,4 +25,4 @@ private:
 };
 
 
-#endif // RESOURCE_MANAGER_H
+#endif // RESOURCE_MANAGER_H_

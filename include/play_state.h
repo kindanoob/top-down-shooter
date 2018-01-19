@@ -1,5 +1,5 @@
-#ifndef PLAY_STATE_H
-#define PLAY_STATE_H
+#ifndef PLAY_STATE_H_
+#define PLAY_STATE_H_
 
 #include <list>
 #include <SFML/Graphics.hpp>
@@ -16,7 +16,7 @@ class Game_map;
 class Mini_map;
 
 
-class Play_state: public Game_state{
+class Play_state: public Game_state {
 public:
     void init();
     Play_state(Application *app);
@@ -94,10 +94,6 @@ public:
         show_mini_map_ = show_mini_map;
     }
     void draw_mini_map(Application *app);
-    //sf::RectangleShape& mini_map_rect_shape(){
-        //return mini_map_rect_shape_;
-    //}
-    //void init_mini_map_rect_shape();
 private:
     bool initial_enemy_spawn_ = true;//is true for the first wave of enemies, is used to
                                      //place enemies far from the player when the game starts
@@ -108,9 +104,8 @@ private:
     Game_map* game_map_;
     sf::Clock play_state_clock_;
     bool show_mini_map_ = false;
-    ///mini map
-    //sf::RectangleShape mini_map_rect_shape_;
     Mini_map *mini_map;
 
 };
-#endif // PLAY_STATE_H
+
+#endif // PLAY_STATE_H_

@@ -1,5 +1,5 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#ifndef PLAYER_H_
+#define PLAYER_H_
 
 
 #include <SFML/Audio.hpp>
@@ -12,36 +12,24 @@ class Application;
 class Enemy;
 
 
-class Player: public Entity{
+class Player: public Entity {
 public:
     Player(double x, double y, double w, double h, double dx, double dy, int angle, int health, int damage, sf::Texture &texture, int row, int col, sf::Texture aim_texture, int aim_row, int aim_col):
         Entity(x, y, w, h, dx, dy, angle, health, damage, texture, row, col){
-        std::cout << "Player()" << std::endl;
-
         sf::FloatRect r = get_sprite().getGlobalBounds();
-        //set_center_x(r.left + r.height / 2);
-        //set_center_y(r.top + r.height / 2);
         set_center_x(x);
         set_center_y(y);
         set_origin_x(get_texture().getSize().y / 2); //<--- ATTENTION
 
-        //std::cout << "origin x: " << get_origin_x() << ", y: " <<
-        //get_origin_y() << std::endl;
         set_aim_texture(aim_texture);
         set_aim_sprite(get_aim_texture());
         get_aim_sprite().setOrigin(sf::Vector2f(get_aim_texture().getSize().x / 2, get_aim_texture().getSize().y / 2));
         animation_manager().set_animation("player_aim_animation");
 
 
-        std::cout << "x: " << x << ", y: " << y << std::endl;
-        std::cout << "sprite pos before: " << get_sprite().getPosition().x << ", " <<
-        get_sprite().getPosition().y << std::endl;
         get_sprite().setPosition(sf::Vector2f(50, 100));
         create_animations();
         animation_manager().set_animation("player_default_animation");
-        std::cout << "sprite pos after: " << get_sprite().getPosition().x << ", " <<
-        get_sprite().getPosition().y << std::endl;
-        std::cout << "BBB " << get_x() << ", " << get_y() << std::endl;
 
 
         //test_sound_buffer.loadFromFile("resources/sounds/player_shoot1.wav");;
@@ -155,4 +143,4 @@ private:
 
 };
 
-#endif // PLAYER_H
+#endif // PLAYER_H_

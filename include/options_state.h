@@ -1,5 +1,5 @@
-#ifndef OPTIONS_STATE_H
-#define OPTIONS_STATE_H
+#ifndef OPTIONS_STATE_H_
+#define OPTIONS_STATE_H_
 
 #include <SFML/Graphics.hpp>
 
@@ -11,7 +11,7 @@
 class Application;
 
 
-class Options_state: public Game_state{
+class Options_state: public Game_state {
 public:
     Options_state(Application *app);
     ~Options_state();
@@ -35,4 +35,5 @@ private:
     sf::RenderWindow *window_;
     Button *back_button_;
 };
-#endif // OPTIONS_STATE_H
+
+#endif // OPTIONS_STATE_H_
