@@ -1,5 +1,9 @@
 # top_down_shooter
 
+![top_down_shooter](resources/top_down_shooter.png)
+
+![top_down_shooter_minimap](resources/top_down_shooter_minimap.png)
+
 Basic engine for top-down shooter game implemented in C++ using SFML
 
 Requirements: 
